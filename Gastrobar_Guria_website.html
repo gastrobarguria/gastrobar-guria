@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gastrobar Guria | Cocina georgiana en Haro</title>
+<meta name="description" content="Gastrobar Guria — cocina georgiana en Haro, La Rioja.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#e4e4e2;color:#242424;line-height:1.6}
+header{background:#eeeeec;text-align:center;padding:28px 20px 20px;border-bottom:1px solid #d0d0ce}
+.logo{width:min(300px,80vw);height:auto;display:block;margin:0 auto 16px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+h1{font-family:Georgia,'Times New Roman',serif;font-size:52px;letter-spacing:3px;font-weight:400;margin-bottom:4px}
+.tagline{font-size:15px;font-weight:700;letter-spacing:4px}
+nav{background:#242424;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:12px}
+nav a{color:#fff;text-decoration:none;padding:9px 15px;border-radius:5px;font-weight:700;font-size:14px}
+nav a:hover{background:#444}
+.hero{background:#dededc;text-align:center;padding:75px 20px}
+.hero h2{font-family:Georgia,'Times New Roman',serif;font-size:42px;margin-bottom:18px}
+.hero p{max-width:720px;margin:0 auto 28px;font-size:18px}
+.button{display:inline-block;background:#242424;color:#fff;text-decoration:none;padding:13px 22px;border-radius:5px;font-weight:700}
+.button:hover{background:#444}
+section{max-width:1000px;margin:0 auto;padding:70px 20px}
+section h2{font-family:Georgia,'Times New Roman',serif;font-size:38px;text-align:center;margin-bottom:20px}
+.intro{max-width:720px;margin:0 auto;text-align:center;font-size:17px}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:35px}
+.menu-card{background:#f8f8f6;padding:26px;border:1px solid #d3d3d1;border-radius:8px}
+.menu-card h3{font-family:Georgia,'Times New Roman',serif;font-size:25px;margin-bottom:7px}
+.price{font-weight:700;margin-top:14px}
+.note{font-size:14px;color:#666;margin-top:4px}
+.about{background:#f8f8f6;max-width:none}
+.about-inner{max-width:1000px;margin:auto}
+.contact-box{background:#f8f8f6;border:1px solid #d3d3d1;border-radius:8px;padding:30px;max-width:720px;margin:30px auto 0}
+.contact-item{margin-bottom:22px}
+.contact-item:last-child{margin-bottom:0}
+.contact-item strong{display:block;font-family:Georgia,'Times New Roman',serif;font-size:21px;margin-bottom:5px}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.socials a{background:#242424;color:#fff;text-decoration:none;padding:10px 14px;border-radius:5px;font-weight:700;font-size:14px}
+.socials a:hover{background:#444}
+footer{background:#242424;color:#fff;text-align:center;padding:28px 20px;font-size:14px}
+@media(max-width:700px){
+h1{font-size:38px;letter-spacing:2px}
+.hero{padding:55px 18px}
+.hero h2{font-size:32px}
+section{padding:55px 18px}
+section h2{font-size:32px}
+.menu-grid{grid-template-columns:1fr}
+.logo{width:min(280px,90vw)}
+nav{gap:2px}
+nav a{padding:8px 10px;font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img class="logo" alt="Logo de Gastrobar Guria" src="data:image/webp;base64,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">
+  <h1>Gastrobar Guria</h1>
+  <div class="tagline">COCINA GEORGIANA</div>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#cocina">Nuestra cocina</a>
+  <a href="#menu">Menú</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<main>
+<section class="hero" id="inicio">
+  <h2>Bienvenidos a Gastrobar Guria</h2>
+  <p>Descubre la cocina georgiana en un ambiente acogedor, con platos tradicionales y buenos momentos.</p>
+  <a class="button" href="#menu">Ver nuestro menú</a>
+</section>
+
+<section id="cocina">
+  <h2>Nuestra cocina</h2>
+  <p class="intro">Una experiencia gastronómica inspirada en Georgia, donde la tradición se encuentra con el ambiente de un gastrobar. Disfruta de sabores georgianos, platos tradicionales y una experiencia diferente en Haro.</p>
+</section>
+
+<section id="menu">
+  <h2>Nuestro menú</h2>
+  <div class="menu-grid">
+    <article class="menu-card">
+      <h3>Khinkali</h3>
+      <p>Tradicionales dumplings georgianos.</p>
+      <div class="price">2,50 € / unidad</div>
+      <div class="note">Mínimo 10 unidades · Por encargo</div>
+    </article>
+    <article class="menu-card">
+      <h3>Khachapuri</h3>
+      <p>Pan georgiano relleno de queso.</p>
+      <div class="price">Más información próximamente.</div>
+    </article>
+    <article class="menu-card">
+      <h3>Adjarian Khachapuri</h3>
+      <p>Especialidad georgiana tradicional.</p>
+      <div class="price">Más información próximamente.</div>
+    </article>
+    <article class="menu-card">
+      <h3>Lobiani</h3>
+      <p>Especialidad georgiana tradicional.</p>
+      <div class="price">Más información próximamente.</div>
+    </article>
+  </div>
+  <p style="text-align:center;margin-top:28px;font-weight:700;">Menú completo próximamente.</p>
+</section>
+
+<section class="about">
+  <div class="about-inner">
+    <h2>Sobre nosotros</h2>
+    <p class="intro">Gastrobar Guria nace para compartir los sabores y la tradición de la cocina georgiana en Haro. Un lugar para disfrutar, descubrir y compartir.</p>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Visítanos</h2>
+  <div class="contact-box">
+    <div class="contact-item">
+      <strong>📍 Dirección</strong>
+      <p>Av. Santo Domingo de la Calzada, 101, 105<br>26200 Haro, La Rioja</p>
+      <p style="margin-top:12px;"><a class="button" href="https://www.google.com/maps/search/?api=1&query=Gastrobar%20Guria%2C%20Av.%20Santo%20Domingo%20de%20la%20Calzada%20101%2C%20105%2C%2026200%20Haro%2C%20La%20Rioja" target="_blank" rel="noopener">📍 Cómo llegar</a></p>
+    </div>
+
+    <div class="contact-item">
+      <strong>🕐 Apertura</strong>
+      <p>¡Abrimos mañana a las 07:00!</p>
+      <p class="note">Horarios habituales próximamente.</p>
+    </div>
+
+    <div class="contact-item">
+      <strong>📱 Redes sociales</strong>
+      <div class="socials">
+        <a href="https://www.instagram.com/gastrobarguria/" target="_blank" rel="noopener">Instagram · @gastrobarguria</a>
+        <a href="https://www.facebook.com/GastrobarGuria/" target="_blank" rel="noopener">Facebook · @GastrobarGuria</a>
+        <a href="https://www.tiktok.com/@gastrobar.guria" target="_blank" rel="noopener">TikTok · @gastrobar.guria</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>Gastrobar Guria</p>
+  <p>Cocina georgiana · Haro, La Rioja</p>
+  <p style="margin-top:8px;">© 2026 Gastrobar Guria</p>
+</footer>
+
+</body>
+</html>
